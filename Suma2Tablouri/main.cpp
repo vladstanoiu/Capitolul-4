@@ -16,7 +16,7 @@ int main()
                 cout << arrayStack[i] << " + " << arrayHeap[j];
                 cout <<"   Suma lor este:   " << *arraySuma << endl;
             }
-        delete arrayHeap;
+        delete[] arrayHeap;
         arrayHeap = NULL;
     return 0;
 }
