@@ -12,15 +12,17 @@ struct Adresa{
 int main()
 {
     Adresa adresa;
-    adresa.numar = 0;
-    adresa.codPostal = 300414;
-    cout << "Introduceti prenumele , judetul, orasul si strada dvs. in aceasta ordine: " << endl;
+    adresa.numar;
+    adresa.codPostal;
+    cout << "Introduceti prenumele , judetul, orasul si strada, numarul si codul postal al dvs. in aceasta ordine: " << endl;
     cin >> adresa.prenume;
     cin >> adresa.judet;
     cin >> adresa.oras;
     cin >> adresa.strada;
+    cin >> adresa.numar;
+    cin >> adresa.codPostal;
     cout << "Ma numesc " << adresa.prenume << endl;
-    cout << "M-am nascut in judetul " << adresa.judet << ", orasul " << adresa.oras << ", pe strada "<< adresa.strada << " la numarul " << adresa.numar << ". Ah, am uitat si codul postal :) -> " << adresa.codPostal << endl;
+    cout << "M-am nascut in judetul " << adresa.judet << ", orasul " << adresa.oras << ", pe strada "<< adresa.strada << " la numarul " << adresa.numar << "  cu  codul postal " << adresa.codPostal << endl;
 
     return 0;
 }
