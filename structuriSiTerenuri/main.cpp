@@ -1,6 +1,6 @@
 #include <iostream>
 
-enum TipTeren {agricol, pasiune, livada, viran};
+enum TipTeren {viran =1, pasiune, livada, agricol};
 
 using namespace std;
 
@@ -33,12 +33,20 @@ int main()
     oMovila -> _cnpProprietar = unTeren._cnpProprietar;
     oMovila -> _tipTeren = unTeren._tipTeren;
     oMovila -> _arie = unTeren._arie;
+    TipTeren inSfarsit = viran;
+
 
     cout << "Suprafata lunga este " << oMovila->_suprafata._lung << endl;
     cout << "Suprafata lata este " << oMovila->_suprafata._lat << endl;
     cout << "CNP-ul proprietarului este " << oMovila->_cnpProprietar << endl;
-    cout << "Tipul terenului este " << oMovila->_tipTeren << endl;
     cout << "Aria terenului este " << oMovila->_arie << endl;
+      switch (inSfarsit) {
+            case viran: cout << "Tipul terenului este viran." << endl; break;
+            case agricol: cout << "Tipul terenului este agricol." << endl; break;
+            case pasiune: cout << "Tipul terenului este pasiune." << endl; break;
+            case livada: cout << "Tipul terenului este livada." << endl; break;
+            default: cout << "Eroare." << endl;
+        }
 
     delete oMovila;
     oMovila = NULL;
