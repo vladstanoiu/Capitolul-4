@@ -12,9 +12,8 @@ int main()
     double* pntMedie = new double;
     *pntMedie = (*pntA + *pnt1 + *pnt2)/3;
     cout << "Media este: " << *pntMedie << endl;
-    delete pntA,pnt1,pnt2,pntMedie;
+    delete pnt1,pnt2,pntMedie;
     pnt1 = NULL;
-    pntA = NULL;
     pnt2 = NULL;
     pntMedie =NULL;
 
