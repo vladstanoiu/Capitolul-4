@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1573412312 source:c:\users\vlad\desktop\proiecte\micumare\main.cpp
+	<iostream>
+	<ctype.h>
+	<stdio.h>
+
