@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1573409298 source:c:\users\vlad\desktop\proiecte\minicalculator\operatii.cpp
+
+1573409262 source:c:\users\vlad\desktop\proiecte\minicalculator\main.cpp
+	<iostream>
+	"Operatii.h"
+
+1573409262 c:\users\vlad\desktop\proiecte\minicalculator\operatii.h
+
+1573407197 c:\users\vlad\desktop\proiecte\minicalculator\operatii.cpp
+
