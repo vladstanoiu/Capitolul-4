@@ -1,17 +1,17 @@
 
-int Adunare (int a,  int b){
+int adunare (int a,  int b){
     return (a+b);}
 
-int Scadere ( int a, int b ){
+int scadere ( int a, int b ){
     return (a-b);}
 
-int Inmultire ( int a , int b){
+int inmultire ( int a , int b){
     return (a*b);}
 
-int Impartire ( int a , int b){
+int impartire ( int a , int b){
     return (a / b);}
 
-int Modulo ( int a , int b ){
+int modulo ( int a , int b ){
     return (a % b);}
 
 
