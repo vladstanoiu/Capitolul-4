@@ -19,11 +19,11 @@ int main()
     cin >> nr2;
     cout << "Rezultatul este ";
     switch (selectie){
-        case 1: cout << Adunare(nr1 ,nr2); break;
-        case 2: cout << Scadere(nr1 ,nr2); break;
-        case 3: cout << Inmultire(nr1 ,nr2); break;
-        case 4: cout << Impartire(nr1 ,nr2); break;
-        case 5: cout << Modulo(nr1 ,nr2); break;
+        case 1: cout << adunare(nr1 ,nr2); break;
+        case 2: cout << scadere(nr1 ,nr2); break;
+        case 3: cout << inmultire(nr1 ,nr2); break;
+        case 4: cout << impartire(nr1 ,nr2); break;
+        case 5: cout << modulo(nr1 ,nr2); break;
         default : cout << "Numar invalid.";
         }
     return 0;
