@@ -1,24 +1,29 @@
 #include <iostream>
 #include <ctype.h>
-#include <stdio.h>
 
 using namespace std;
 
 int main()
 {
-    char sirCaractere[20];
-    char c;
+    char sirCaractere[19];
     cout << "Introdu un sir de caractere mici si MARI fara spatii intre ele: " << endl;
     cin >> sirCaractere;
     int i;
-    for ( i = 0; i < 20; i++){
-            c = sirCaractere[i];
-            if (islower(c)) c=toupper(c);
-            else  if (isupper(c)) c=tolower(c);
-            putchar(c);
+    for ( i = 0; i < 19; i++)
+    {
+
+        if(isupper(sirCaractere[i]))
+        {
+            sirCaractere[i] = tolower(sirCaractere[i]);
+        }
+        else if(islower(sirCaractere[i]))
+        {
+            sirCaractere[i] = toupper(sirCaractere[i]);
+        }
+
     }
-      sirCaractere[i] = '\0';
-    cout << sirCaractere[20] << endl;
+
+    cout << sirCaractere << endl;
 
     return 0;
 }
