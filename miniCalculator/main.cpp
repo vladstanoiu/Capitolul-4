@@ -22,8 +22,8 @@ int main()
         case 1: cout << adunare(nr1 ,nr2); break;
         case 2: cout << scadere(nr1 ,nr2); break;
         case 3: cout << inmultire(nr1 ,nr2); break;
-        case 4: cout << impartire(nr1 ,nr2); break;
-        case 5: cout << modulo(nr1 ,nr2); break;
+        case 4: if (nr2 == 0 ){cout << "eronat (contine 0)" << endl;} else cout << impartire(nr1 , nr2); break;
+        case 5: if (nr2 == 0 ){cout << "eronat (contine 0)" << endl;} else cout << modulo(nr1 , nr2); break;
         default : cout << "Numar invalid.";
         }
     return 0;
